@@ -1,0 +1,104 @@
+@import "bootstrap/bootstrap";
+
+.section__padding {
+  padding-bottom: 2rem;
+}
+
+.box__style {
+  //   background-color: pink;
+
+  .first__box {
+    // background-color: red;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    > div:first-child {
+      flex: 6;
+      background-color: violet;
+      padding: 5rem;
+    }
+
+    > div:nth-child(2) {
+      flex: 2;
+      background-color: purple;
+      padding: 5rem;
+      color: white;
+    }
+  }
+
+  .second__box {
+    background-color: yellow;
+    display: flex;
+    gap: 1rem;
+
+    > div:first-child {
+      flex: 2;
+      background-color: purple;
+      padding: 5rem;
+    }
+
+    > div:nth-child(2) {
+      flex: 2;
+      background-color: blue;
+      padding: 5rem;
+      color: white;
+    }
+
+    > div:nth-child(3) {
+      flex: 2;
+      background-color: red;
+      padding: 5rem;
+      color: white;
+    }
+  }
+}
+
+.news__flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.news__flex .bg__green {
+  flex: 1;
+}
+
+.news__flex .news__flex {
+  flex: 1;
+}
+
+.news__flex .bg__pink {
+  flex: 1;
+}
+
+.news__flex .bg__red {
+  flex: 2;
+}
+
+.img__list {
+  max-height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img__cuisine {
+  max-height: 450px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.bg__green {
+  background-color: green;
+}
+
+.bg__red {
+  background-color: red;
+}
+
+.bg__blue {
+  background-color: blue;
+}
+
+.bg__pink {
+  background-color: pink;
+}
