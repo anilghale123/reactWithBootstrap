@@ -4,6 +4,22 @@
   padding-bottom: 2rem;
 }
 
+.position__relative {
+  position: relative;
+  z-index: 1;
+}
+
+.position__absolute {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  z-index: 999;
+}
+
 .box__style {
   //   background-color: pink;
 
@@ -12,6 +28,7 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 
     > div:first-child {
       flex: 6;
@@ -31,6 +48,7 @@
     background-color: yellow;
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 
     > div:first-child {
       flex: 2;
@@ -56,49 +74,72 @@
 
 .news__flex {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-}
 
-.news__flex .bg__green {
-  flex: 1;
-}
+  > div:first-child {
+    flex: 6;
 
-.news__flex .news__flex {
-  flex: 1;
-}
+    > ul {
+      flex: 1;
+      background-color: blue;
+      color: white;
+    }
+  }
 
-.news__flex .bg__pink {
-  flex: 1;
-}
+  .n__flex {
+    display: flex;
+    gap: 5;
+    background-color: yellow;
+  }
 
-.news__flex .bg__red {
-  flex: 2;
-}
+  .i__flex {
+    display: flex;
+    gap: 1rem;
+    background-color: aqua;
+  }
 
-.img__list {
-  max-height: 100px;
-  width: 100%;
-  object-fit: cover;
-}
+  .news__flex .bg__green {
+    flex: 1;
+  }
 
-.img__cuisine {
-  max-height: 450px;
-  width: 100%;
-  object-fit: contain;
-}
+  .news__flex .news__flex {
+    flex: 1;
+  }
 
-.bg__green {
-  background-color: green;
-}
+  .news__flex .bg__pink {
+    flex: 1;
+  }
 
-.bg__red {
-  background-color: red;
-}
+  .news__flex .bg__red {
+    flex: 2;
+  }
 
-.bg__blue {
-  background-color: blue;
-}
+  .img__list {
+    max-height: 100px;
+    width: 100%;
+    object-fit: cover;
+  }
 
-.bg__pink {
-  background-color: pink;
+  .img__cuisine {
+    max-height: 450px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .bg__green {
+    background-color: green;
+  }
+
+  .bg__red {
+    background-color: red;
+  }
+
+  .bg__blue {
+    background-color: blue;
+  }
+
+  .bg__pink {
+    background-color: pink;
+  }
 }

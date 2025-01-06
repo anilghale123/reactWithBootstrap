@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="container">
       <div className="row">
-        <h1>Learning CSS with Sanam Dai</h1>
+        <h1 className="mb-5">Learning CSS with Sanam Dai</h1>
 
         <CardList />
         <Jyan />
