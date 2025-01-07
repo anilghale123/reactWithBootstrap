@@ -11,7 +11,7 @@ const CardList = lazy(() => import("./components/Card"));
 
 function App() {
   return (
-    <div className="container">
+    <div className="container body__bg">
       <div className="row">
         <h1 className="mb-5">Learning CSS with Sanam Dai</h1>
 

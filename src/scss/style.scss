@@ -1,12 +1,32 @@
 @import "bootstrap/bootstrap";
 
+.body__bg {
+  background-color: aliceblue;
+}
+
 .section__padding {
   padding-bottom: 2rem;
 }
 
+// card css
+.card__design {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.flex__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
 .position__relative {
   position: relative;
-  z-index: 1;
+  text-align: center;
+  width: 30%;
 }
 
 .position__absolute {
@@ -16,10 +36,12 @@
 
   position: absolute;
   top: 0;
-  padding: 10px;
-  z-index: 999;
+  right: 0;
+  width: 30%;
+  padding: 10px 0 0 10px;
 }
 
+//layout css
 .box__style {
   //   background-color: pink;
 
@@ -72,74 +94,76 @@
   }
 }
 
-.news__flex {
+//body css
+
+// second wrapper
+.main__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+  .second__wrapper {
+    flex: 3;
+    .listing__design {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
 
-  > div:first-child {
-    flex: 6;
+      .listing__flex {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 8px;
+        background-color: #f9f9f9;
 
-    > ul {
-      flex: 1;
-      background-color: blue;
-      color: white;
+        figure {
+          margin: 0;
+
+          img {
+            max-height: 100px;
+            max-width: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+          }
+        }
+      }
     }
   }
 
-  .n__flex {
+  // first wrapper
+
+  .first__wrapper {
     display: flex;
-    gap: 5;
-    background-color: yellow;
-  }
+    flex: 6;
+    background-color: greenyellow;
 
-  .i__flex {
-    display: flex;
-    gap: 1rem;
-    background-color: aqua;
-  }
+    .content__wrapper {
+      position: relative;
+      background-color: yellow;
+      padding: 0;
+      margin: 0;
 
-  .news__flex .bg__green {
-    flex: 1;
-  }
+      figure {
+        margin: 0;
+        background-color: pink;
+        padding: 0;
 
-  .news__flex .news__flex {
-    flex: 1;
-  }
+        img {
+          max-height: 500px;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
 
-  .news__flex .bg__pink {
-    flex: 1;
-  }
-
-  .news__flex .bg__red {
-    flex: 2;
-  }
-
-  .img__list {
-    max-height: 100px;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .img__cuisine {
-    max-height: 450px;
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .bg__green {
-    background-color: green;
-  }
-
-  .bg__red {
-    background-color: red;
-  }
-
-  .bg__blue {
-    background-color: blue;
-  }
-
-  .bg__pink {
-    background-color: pink;
+      .first__absolute {
+        position: absolute;
+        background-color: red;
+        padding: 1rem;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 }

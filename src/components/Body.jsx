@@ -24,35 +24,50 @@ const listing = [
     description: "Healthy home workout",
     img: "t2.png",
   },
+  {
+    id: 5,
+
+    description: "Healthy home workout",
+    img: "t2.png",
+  },
+  {
+    id: 6,
+
+    description: "Healthy home workout",
+    img: "t2.png",
+  },
 ];
 function Jyan() {
   return (
-    <section className="bg__yellow section__padding">
-      <div className="news__flex">
-        <div className="position__relative">
-          <div className="">
+    <section className="mb-5">
+      <div className="main__wrapper">
+        {/* first section wrapper */}
+        <div className="first__wrapper">
+          <div className="content__wrapper">
             <figure>
-              <img src="b5.jpg" alt="cuisine" className="img__cuisine" />
+              <img src="t2.png" alt="title" />
             </figure>
-          </div>
-          <div>
-            <p className="position__absolute">explore world cuisine</p>
+
+            <p className="first__absolute">Explore the world!!</p>
           </div>
         </div>
 
-        <ul className="">
-          {listing.map((item) => (
-            <li className="n__flex" key={item.id}>
-              <div className=" i__flex">
-                <figure>
-                  <img src={item.img} alt="title" className="img__list" />
-                </figure>
+        {/* second section wrapper */}
+        <div className="second__wrapper">
+          <ul>
+            <li className="listing__design">
+              {listing.map((list) => (
+                <div className="listing__flex">
+                  <figure>
+                    <img src={list.img} alt="title" />
+                  </figure>
 
-                <p>{item.description}</p>
-              </div>
+                  <h3>{list.description}</h3>
+                </div>
+              ))}
             </li>
-          ))}
-        </ul>
+          </ul>
+        </div>
       </div>
     </section>
   );
