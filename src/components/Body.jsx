@@ -27,7 +27,7 @@ const listing = [
 ];
 function Jyan() {
   return (
-    <section className="bg__yellow section__padding">
+    <section className="bg__yellow section__padding bg__black">
       <div className="news__flex">
         <div className="position__relative">
           <div className="">

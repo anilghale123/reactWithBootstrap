@@ -11,7 +11,7 @@ const heros = [
 
 function CardList() {
   return (
-    <section className="section__padding">
+    <section className="section__padding bg__black">
       <div className="container">
         <div className="row g-4 position__relative">
           {heros.map((item, index) => (

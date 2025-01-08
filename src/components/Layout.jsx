@@ -1,6 +1,6 @@
 function Layout() {
   return (
-    <div className="container section__padding">
+    <div className="container section__padding bg__black">
       <section className="box__style">
         <div className="first__box">
           <div>

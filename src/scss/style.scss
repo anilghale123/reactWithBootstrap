@@ -1,7 +1,17 @@
 @import "bootstrap/bootstrap";
 
+body {
+  background-color: #181818;
+  /* Or any other dark color you prefer */
+  color: #fff;
+  /* Set text color to white */
+}
 .section__padding {
   padding-bottom: 2rem;
+}
+.bg__black{
+  background-color: black;
+  color: white;
 }
 
 .position__relative {
