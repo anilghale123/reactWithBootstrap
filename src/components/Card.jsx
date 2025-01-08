@@ -7,27 +7,33 @@ const heros = [
   { name: "Subash", description: "He is shy" },
   { name: "Sujata", description: "She is lazy" },
   { name: "Brijen", description: "He is a legend" },
+  { name: "Sandup", description: "He is great" },
+  { name: "Manish", description: "He is the best" },
+  { name: "Subash", description: "He is shy" },
+  { name: "Sujata", description: "She is lazy" },
+  { name: "Brijen", description: "He is a legend" },
+  { name: "Sandup", description: "He is great" },
+  { name: "Manish", description: "He is the best" },
+  { name: "Subash", description: "He is shy" },
+  { name: "Sujata", description: "She is lazy" },
+  { name: "Brijen", description: "He is a legend" },
 ];
 
 function CardList() {
   return (
-    <section className="section__padding bg__black">
-      <div className="container">
-        <div className="row g-4 position__relative">
+    <section className="section__padding">
+      <div className="">
+        <div className="flex__card">
           {heros.map((item, index) => (
-            <div className="col-sm-1 col-md-2 col-lg-3" key={index}>
-              <div className="card shadow-sm">
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title text-center">{item.name}</h5>
-                  <p className="card-text text-muted">{item.description}</p>
-                  <button className="btn btn-outline-success mt-auto">
-                    Learn More
-                  </button>
-                </div>
+            <div className="position__relative">
+              <div className="card__design">
+                <h5>{item.name}</h5>
+                <p>{item.description}</p>
+                <button type="button">Save</button>
               </div>
 
-              <div className="">
-                <p className="position__absolute">Sale</p>
+              <div className="position__absolute">
+                <p className="">Sale</p>
               </div>
             </div>
           ))}

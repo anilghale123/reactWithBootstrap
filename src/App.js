@@ -14,7 +14,7 @@ const CardList = lazy(() => import("./components/Card"));
 
 function App() {
   return (
-    <div className="container h-[1500px] bg__black">
+    <div className="container h-[1500px] bg__black body__bg">
       <div className="row bg__black">
         <h1 className="mb-5">Learning</h1>
         <SplashCursor />
