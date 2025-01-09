@@ -17,6 +17,7 @@ body {
 // card css
 .card__design {
   background-color: white;
+  color: #181818;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -72,7 +73,7 @@ body {
       flex: 2;
       background-color: purple;
       padding: 5rem;
-      color: white;
+      // color: white;
     }
   }
 
@@ -92,14 +93,14 @@ body {
       flex: 2;
       background-color: blue;
       padding: 5rem;
-      color: white;
+      // color: white;
     }
 
     > div:nth-child(3) {
       flex: 2;
       background-color: red;
       padding: 5rem;
-      color: white;
+      // color: white;
     }
   }
 }
@@ -126,6 +127,7 @@ body {
         border: 1px solid black;
         border-radius: 8px;
         background-color: #f9f9f9;
+        color: #181818;
 
         figure {
           margin: 0;
