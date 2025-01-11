@@ -29,7 +29,7 @@ body {
   justify-content: space-between;
   gap: 3rem;
 }
-.bg__black{
+.bg__black {
   background-color: black;
   color: white;
 }
@@ -147,14 +147,15 @@ body {
 
   .first__wrapper {
     display: flex;
+
     flex: 6;
     background-color: greenyellow;
 
     .content__wrapper {
-      position: relative;
       background-color: yellow;
       padding: 0;
       margin: 0;
+      position: relative;
 
       figure {
         margin: 0;
@@ -170,10 +171,11 @@ body {
 
       .first__absolute {
         position: absolute;
+        // bottom: 0;
         background-color: red;
         padding: 1rem;
-        bottom: 0;
         width: 100%;
+        
         text-align: center;
       }
     }

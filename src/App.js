@@ -6,6 +6,7 @@ import { lazy } from "react";
 import "./scss/style.scss";
 import TextShow from "./components/TextShow";
 import SplashCursor from "./components/SplashCursor";
+import ResponsivePdfViewer from "./notesGriha/PdfViewer";
 
 const Layout = lazy(() => import("./components/Layout"));
 const Jyan = lazy(() => import("./components/Body"));
@@ -17,12 +18,13 @@ function App() {
     <div className="container h-[1500px] bg__black body__bg">
       <div className="row bg__black">
         <h1 className="mb-5">Learning</h1>
-        <SplashCursor />
+        {/* <SplashCursor /> */}
 
         <TextShow />
         <CardList />
         <Jyan />
         <Layout />
+        <ResponsivePdfViewer pdfFile="test.pdf" />
       </div>
     </div>
   );

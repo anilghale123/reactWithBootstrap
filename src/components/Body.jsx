@@ -45,10 +45,9 @@ function Jyan() {
         <div className="first__wrapper">
           <div className="content__wrapper">
             <figure>
-              <img src="t2.png" alt="title" />
+              <img src="t2.png" alt="title" />{" "}
             </figure>
-
-            <p className="first__absolute">Explore the world!!</p>
+            <div className="first__absolute">Explore the world!!</div>
           </div>
         </div>
 

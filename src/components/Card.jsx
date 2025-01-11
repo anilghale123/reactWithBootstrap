@@ -7,16 +7,6 @@ const heros = [
   { name: "Subash", description: "He is shy" },
   { name: "Sujata", description: "She is lazy" },
   { name: "Brijen", description: "He is a legend" },
-  { name: "Sandup", description: "He is great" },
-  { name: "Manish", description: "He is the best" },
-  { name: "Subash", description: "He is shy" },
-  { name: "Sujata", description: "She is lazy" },
-  { name: "Brijen", description: "He is a legend" },
-  { name: "Sandup", description: "He is great" },
-  { name: "Manish", description: "He is the best" },
-  { name: "Subash", description: "He is shy" },
-  { name: "Sujata", description: "She is lazy" },
-  { name: "Brijen", description: "He is a legend" },
 ];
 
 function CardList() {
