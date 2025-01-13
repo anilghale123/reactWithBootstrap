@@ -15,5 +15,5 @@
                : absolute (relative to parent wrapper)
                : fixed 
                : sticky
-  --> position can be controll using (top,bottom,left,right) property
+  --> position can be controll using (top,bottom,left,right) propertyy
 
